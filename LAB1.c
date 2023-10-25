@@ -66,25 +66,25 @@
 //     return 0;
 // }
 
-int FibonacciNth(int num)
-{
-    if (num <= 1)
-    {
-        return num;
-    }
-    return FibonacciNth(num - 1) + FibonacciNth(num - 2);
-}
+// int FibonacciNth(int num)
+// {
+//     if (num <= 1)
+//     {
+//         return num;
+//     }
+//     return FibonacciNth(num - 1) + FibonacciNth(num - 2);
+// }
 
-int main()
-{
-    int nth;
-    printf("How many number of terms? : ");
-    scanf("%d", &nth);
-    printf(" BEHOLD THE FIBONACCI SERIES!!  \n\n");
-    for (int i = 0; i < nth; i++)
-    {
-        printf("%d, ", FibonacciNth(i));
-    }
-    return 0;
-}
+// int main()
+// {
+//     int nth;
+//     printf("How many number of terms? : ");
+//     scanf("%d", &nth);
+//     printf(" BEHOLD THE FIBONACCI SERIES!!  \n\n");
+//     for (int i = 0; i < nth; i++)
+//     {
+//         printf("%d, ", FibonacciNth(i));
+//     }
+//     return 0;
+// }
 
