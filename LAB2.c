@@ -163,44 +163,47 @@
 //     return 0;
 // }
 
-struct Distance
-{
-    int feet;
-    int inches;
-};
-struct Distance addDistances(struct Distance d1, struct Distance d2)
-{
-    struct Distance ret;
-    ret.feet = d1.feet + d2.feet;
-    ret.inches = d1.inches + d2.inches;
 
-    if (ret.inches>=12)
-    {
-        ret.feet++;
-        ret.inches-=12;
-    }
-    return ret;
-}
+// Question 6:
 
-int main()
+// struct Distance
+// {
+//     int feet;
+//     int inches;
+// };
+// struct Distance addDistances(struct Distance d1, struct Distance d2)
+// {
+//     struct Distance ret;
+//     ret.feet = d1.feet + d2.feet;
+//     ret.inches = d1.inches + d2.inches;
 
-{
-    struct Distance d1;
-    printf("Enter feet: ");
-    scanf("%d", &d1.feet);
-    printf("Enter inches: ");
-    scanf("%d", &d1.inches);
+//     if (ret.inches>=12)
+//     {
+//         ret.feet++;
+//         ret.inches-=12;
+//     }
+//     return ret;
+// }
 
-    printf("\n");
+// int main()
 
-    struct Distance d2;
-    printf("Enter feet: ");
-    scanf("%d", &d2.feet);
-    printf("Enter inches: ");
-    scanf("%d", &d2.inches);
+// {
+//     struct Distance d1;
+//     printf("Enter feet: ");
+//     scanf("%d", &d1.feet);
+//     printf("Enter inches: ");
+//     scanf("%d", &d1.inches);
 
-    struct Distance addition = addDistances(d1, d2);
-    printf("%d\'%d\" + %d\'%d\" = %d\'%d\"", d1.feet, d1.inches, d2.feet, d2.inches, addition.feet, addition.inches);
-    return 0;
+//     printf("\n");
+
+//     struct Distance d2;
+//     printf("Enter feet: ");
+//     scanf("%d", &d2.feet);
+//     printf("Enter inches: ");
+//     scanf("%d", &d2.inches);
+
+//     struct Distance addition = addDistances(d1, d2);
+//     printf("%d\'%d\" + %d\'%d\" = %d\'%d\"", d1.feet, d1.inches, d2.feet, d2.inches, addition.feet, addition.inches);
+//     return 0;
     
-}
+// }
