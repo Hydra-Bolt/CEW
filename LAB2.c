@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 
 // Question 1:
@@ -56,9 +57,10 @@
 //         }
 //         printf("\n");
 //     }
+//     return 0;
 // }
 
-// Question 2:
+// Question 3:
 // custom function for string length uses the 
 // int stringLength(const char *str) {
 //     int length = 0;
@@ -104,5 +106,44 @@
 //     {
 //         printf("Number of similar characters: %d", count);
 //     }
+//     return 0;
 
 // }
+
+// Question 4: 
+// int main() {
+//     char sentence[1000];
+//     printf("Enter a sentence: ");
+//     scanf("%s", sentence);
+    
+//     for (int i = 0; sentence[i] != '\0'; i++) {
+//         if (sentence[i] >= 'a' && sentence[i] <= 'z') {
+//             sentence[i] = sentence[i] - 'a' + 'A';
+//         } else if (sentence[i] >= 'A' && sentence[i] <= 'Z') {
+//             sentence[i] = sentence[i] - 'A' + 'a';
+//         }
+//     }
+
+//     printf("Modified sentence: %s", sentence);
+
+//     return 0;
+// }
+
+// Question 5:
+
+int main()
+{
+    int array[] = {1,2,3,2,4,5,7,7,6,7,8};
+
+    for (int i = 0; i<sizeof(array)/sizeof(array[0]); i++)
+    {
+        for (int j = 0; j<i; j++)
+        {
+            if(array[i] == array[j])
+            {
+                printf("%d is a recurring number in the sequence.\n", array[i]);
+            }
+        }
+    }
+
+}
